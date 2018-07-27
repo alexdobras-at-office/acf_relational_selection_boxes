@@ -5,6 +5,6 @@ This is what I want to achive, after selecting a location give me the floors in 
 ![schema](https://user-images.githubusercontent.com/41784624/43316762-fc78254c-91a2-11e8-9453-4df01ca8f07c.png)
 
 
-This is how I do it currently, but not desiriable
+This is how I do it currently, but not desirable
 
 ![currently](https://user-images.githubusercontent.com/41784624/43317719-9e22979e-91a6-11e8-99ff-6f0bb0f02b28.png)
