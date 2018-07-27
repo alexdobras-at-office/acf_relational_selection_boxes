@@ -13,7 +13,7 @@ function populate_field_select_floor( $field) {
 
     // if has rows
 	if( have_rows('location_space_builder', $fieldfrom) ) :
-	
+
 
         // while has rows
         while( have_rows('location_space_builder', $fieldfrom) ) :
@@ -43,7 +43,7 @@ function populate_field_select_floor( $field) {
 }
 
 // filter for a specific field based on it's name
-add_filter('acf/load_field/name=dropdown_floors', 'show_space_constructor_based_on_location');
+add_filter('acf/load_field/name=dropdown_floors', 'populate_field_select_floor');
 
-//end of show_space_constructor_based_on_location( $field)
+//end of populate_field_select_floor($field)
 ?>

@@ -16,6 +16,6 @@ function populate_assign_location_field( $args, $field, $post_id ) {
 }
 
 // filter for a specific field based on it's name
-add_filter('acf/fields/post_object/query/name=artitem_assign_location', 'my_post_object_query', 10, 3);
+add_filter('acf/fields/post_object/query/name=artitem_assign_location', 'populate_assign_location_field', 10, 3);
 
 ?>

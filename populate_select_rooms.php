@@ -1,5 +1,5 @@
 <?php
-function show_rooms_from_a_floor( $field) {
+function populate_field_select_room( $field) {
 
 	//get the ID of the assigned location
 	$fieldfrom = get_field_object('artitem_assign_location')[value]->ID;
@@ -16,7 +16,7 @@ function show_rooms_from_a_floor( $field) {
 
         // while has rows
         while( have_rows('location_space_builder', $fieldfrom) ) :
-		
+
 			// instantiate row
 			the_row();
 			// echo "<h3>Floor is: " .get_row_index() . "</h3>";
@@ -58,7 +58,7 @@ function show_rooms_from_a_floor( $field) {
 }
 
 // filter for a specific field based on it's name
-add_filter('acf/load_field/name=dropdown_rooms', 'show_rooms_from_a_floor');
+add_filter('acf/load_field/name=dropdown_rooms', 'populate_field_select_room');
 
 //end of show_rooms_from_a_floor( $field)
 ?>

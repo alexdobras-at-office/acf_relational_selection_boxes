@@ -8,3 +8,8 @@ This is what I want to achive, after selecting a location give me the floors in 
 This is how I do it currently, but not desirable
 
 ![currently](https://user-images.githubusercontent.com/41784624/43317719-9e22979e-91a6-11e8-99ff-6f0bb0f02b28.png)
+
+
+This is the structure of the Norway Building:
+
+![location_space_builder_structure](https://user-images.githubusercontent.com/41784624/43318420-63933630-91a9-11e8-8ff2-9c34a7e9544b.png)
