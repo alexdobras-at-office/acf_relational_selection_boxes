@@ -1,5 +1,5 @@
 <?php
-function populate_field_select_room( $field) {
+function populate_field_select_room($field) {
 
 	//get the ID of the assigned location
 	$fieldfrom = get_field_object('artitem_assign_location')[value]->ID;
@@ -37,10 +37,12 @@ function populate_field_select_room( $field) {
 						$room_index = get_row_index();
 
 						// vars
-						$room_value = get_sub_field('room_number');
-						$room_label = get_sub_field('room_name');
+            $room_number = get_sub_field('room_number');
+            /* ?> <pre><?php print_r($room_name); ?> </pre> <?php */
+            $room_name = get_sub_field('room_name');
+            /* ?> <pre><?php print_r($room_number); ?> </pre> <?php */
 
-						$field['choices'][ $room_value ] = /* $room_index . " : " .  */ $room_value . " - " . $room_label;
+						$field['choices'][ $room_number ] = /* $room_index . " : " .  */ $room_number . " - " . $room_name;
 
 					endwhile;
 

@@ -1,6 +1,6 @@
 <?php
 
-function populate_assign_location_field( $args, $field, $post_id ) {
+function populate_assign_location_field($args, $field, $post_id) {
 
 	//query locations available only to that logged user
 	$args = array(

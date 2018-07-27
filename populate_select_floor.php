@@ -1,5 +1,5 @@
 <?php
-function populate_field_select_floor( $field) {
+function populate_field_select_floor($field) {
 
 	//get the ID of this post
 	//print_r(get_the_ID() . ' - this is the current post ID');
@@ -22,13 +22,11 @@ function populate_field_select_floor( $field) {
 			the_row();
 
 			//get the index of this row
-			$floor_index = get_row_index();
+            $floor_index = get_row_index();
 
 			// vars
 			$floor_number = get_sub_field('floor_number');
-			?> <pre><?php print_r($floor_number); ?> </pre> <?php
 			$floor_name = get_sub_field('floor_name');
-			?> <pre><?php print_r($floor_name); ?> </pre> <?php
 
             // append to choices
 			$field['choices'][ $floor_number ] =/* $floor_index .  " : "  . */ $floor_number . " - " . $floor_name;
